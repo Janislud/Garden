@@ -1,0 +1,92 @@
+@use 'variables';
+
+header {
+    .container-header {
+        display:variables.$main-display-position;
+        flex-wrap: variables.$main-display-wrap;
+        border-bottom: 1px solid #DDD;
+        justify-content: center;
+        .main-img-wrapper {
+           margin: 30px 351px 28px 40px;
+            .main-logo {
+                width: 70px;
+                height: 70px;
+            }
+        }
+
+        .main-navigation {
+            display: variables.$main-display-position;
+            flex-wrap: variables.$main-display-wrap;
+            align-items: center;
+            margin: 54px 373px 48px 0px;
+            .navigation-menu {
+                display: variables.$main-display-position;
+                flex-wrap: variables.$main-display-wrap;
+                list-style: none;
+                gap: 32px;
+                
+                .list {
+                    .list-link {
+                        text-decoration: none;
+                        color: #282828;
+                        font-family: variables.$main-font-family;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 130%;
+                    }
+                }
+            }
+        }
+
+        .bucket-wrapper {
+            margin: 41px 40px 39px 0px;
+            .basket-button {
+                background: none;
+                border: none;
+                cursor: pointer;
+                .basket-img {
+                    max-width: 40px;
+                }
+            }
+        }
+
+    
+    }
+
+    .background-wall-paper {
+        background-image: url('./media/header-media/garden-webshop-background.jpg');
+        background-size: cover;
+        background-position: center;
+
+        .discount-text-button-wrapper {
+            padding: 80px 40px 210px 40px;
+            h1 {
+                padding-bottom:40px;
+                color: #FFF;
+                font-family: variables.$main-font-family;
+                font-size: 96px;
+                font-weight: 700;
+                line-height: 110%;
+            }
+            button {
+                border-radius: 6px;
+                background: #393;
+                display: flex;
+                padding: 16px 56px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                color: #FFF;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 130%;
+                border: none;
+                cursor: pointer;
+            }
+        }
+     
+    }
+}
